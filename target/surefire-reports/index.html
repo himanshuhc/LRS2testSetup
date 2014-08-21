@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 7 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-LRS2_0">
+              <span class="suite-name border-failed">LRS2_0</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-LRS2_0">
+                    <span>LRS2.0.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-LRS2_0">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-LRS2_0">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-LRS2_0">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-LRS2_0">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-LRS2_0">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-LRS2_0">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods, 7 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-LRS2_0" class="hide-methods failed suite-LRS2_0"> (hide)</a> <!-- hide-methods failed suite-LRS2_0 -->
+                      <a href="#" panel-name="suite-LRS2_0" class="show-methods failed suite-LRS2_0"> (show)</a> <!-- show-methods failed suite-LRS2_0 -->
+                    </span>
+                    <div class="method-list-content failed suite-LRS2_0">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS2_0" title="LRS2_0.runTests" hash-for-method="WEB_1257">WEB_1257</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS2_0" title="LRS2_0.runTests" hash-for-method="WEB_1262">WEB_1262</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS2_0" title="LRS2_0.runTests" hash-for-method="WEB_1263">WEB_1263</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS2_0" title="LRS2_0.runTests" hash-for-method="WEB_1264">WEB_1264</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS2_0" title="LRS2_0.runTests" hash-for-method="WEB_1273">WEB_1273</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS2_0" title="LRS2_0.runTests" hash-for-method="WEB_1760">WEB_1760</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS2_0" title="LRS2_0.runTests" hash-for-method="WEB_1762">WEB_1762</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-LRS2_0 -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-LRS2_0" class="hide-methods passed suite-LRS2_0"> (hide)</a> <!-- hide-methods passed suite-LRS2_0 -->
+                      <a href="#" panel-name="suite-LRS2_0" class="show-methods passed suite-LRS2_0"> (show)</a> <!-- show-methods passed suite-LRS2_0 -->
+                    </span>
+                    <div class="method-list-content passed suite-LRS2_0">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS2_0" title="LRS2_0.runTests" hash-for-method="WEB_1259">WEB_1259</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS2_0" title="LRS2_0.runTests" hash-for-method="WEB_1260">WEB_1260</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS2_0" title="LRS2_0.runTests" hash-for-method="WEB_1758">WEB_1758</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS2_0" title="LRS2_0.runTests" hash-for-method="WEB_1759">WEB_1759</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-LRS2_0 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-LRS2_0" class="panel LRS2_0">
+          <div class="suite-LRS2_0-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">LRS2_0.runTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="WEB_1257">
+                  </a> <!-- WEB_1257 -->
+                  <span class="method-name">WEB_1257</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Could not find element: {&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//button[(contains(@style,&apos;inline-block&apos;)) and (text()=&apos;Save&apos;)]&quot;} (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.11 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;imac-24.local&apos;, ip: &apos;172.25.35.16&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.2&apos;, java.version: &apos;1.7.0_45&apos;
+Session ID: null
+Driver info: org.openqa.selenium.safari.SafariDriver
+Capabilities [{platform=MAC, cssSelectorsEnabled=true, javascriptEnabled=true, secureSsl=true, browserName=safari, takesScreenshot=true, version=7.0.3}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at LRS2_0.helperFunctions.clickUsingJS(helperFunctions.java:465)
+	at LRS2_0.helperFunctions.click(helperFunctions.java:148)
+	at LRS2_0.helperFunctions.addLocation(helperFunctions.java:301)
+	at LRS2_0.runTests.WEB_1257(runTests.java:158)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WEB_1262">
+                  </a> <!-- WEB_1262 -->
+                  <span class="method-name">WEB_1262</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at LRS2_0.runTests.WEB_1262(runTests.java:295)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WEB_1263">
+                  </a> <!-- WEB_1263 -->
+                  <span class="method-name">WEB_1263</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Timed out after 60 seconds while waiting for Ajax to complete.
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;imac-24.local&apos;, ip: &apos;172.25.35.16&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.2&apos;, java.version: &apos;1.7.0_45&apos;
+Driver info: driver.version: unknown
+	at LRS2_0.helperFunctions.waitForAjaxRefresh(helperFunctions.java:100)
+	at LRS2_0.helperFunctions.login(helperFunctions.java:490)
+	at LRS2_0.runTests.WEB_1263(runTests.java:313)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WEB_1264">
+                  </a> <!-- WEB_1264 -->
+                  <span class="method-name">WEB_1264</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Timed out after 60 seconds while waiting for Ajax to complete.
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;imac-24.local&apos;, ip: &apos;172.25.35.16&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.2&apos;, java.version: &apos;1.7.0_45&apos;
+Driver info: driver.version: unknown
+	at LRS2_0.helperFunctions.waitForAjaxRefresh(helperFunctions.java:100)
+	at LRS2_0.helperFunctions.login(helperFunctions.java:490)
+	at LRS2_0.runTests.WEB_1264(runTests.java:349)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WEB_1273">
+                  </a> <!-- WEB_1273 -->
+                  <span class="method-name">WEB_1273</span>
+                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;imac-24.local&apos;, ip: &apos;172.25.35.16&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.2&apos;, java.version: &apos;1.7.0_45&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at LRS2_0.AccountOwner.login(AccountOwner.java:21)
+	at LRS2_0.runTests.WEB_1273(runTests.java:370)
+Caused by: org.openqa.selenium.safari.ConnectionClosedException: The underlying channel was closed
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;imac-24.local&apos;, ip: &apos;172.25.35.16&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.2&apos;, java.version: &apos;1.7.0_45&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.safari.WebSocketConnection$2.operationComplete(WebSocketConnection.java:79)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:428)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListeners(DefaultChannelFuture.java:419)
+	at org.jboss.netty.channel.DefaultChannelFuture.setSuccess(DefaultChannelFuture.java:363)
+	at org.jboss.netty.channel.AbstractChannel$ChannelCloseFuture.setClosed(AbstractChannel.java:353)
+	at org.jboss.netty.channel.AbstractChannel.setClosed(AbstractChannel.java:183)
+	at org.jboss.netty.channel.socket.nio.AbstractNioChannel.setClosed(AbstractNioChannel.java:200)
+	at org.jboss.netty.channel.socket.nio.NioSocketChannel.setClosed(NioSocketChannel.java:85)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.close(AbstractNioWorker.java:613)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:98)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.processSelectedKeys(AbstractNioWorker.java:373)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:247)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:35)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WEB_1760">
+                  </a> <!-- WEB_1760 -->
+                  <span class="method-name">WEB_1760</span>
+                  <div class="stack-trace">java.lang.ArrayIndexOutOfBoundsException: 2
+	at LRS2_0.helperFunctions.checkAccountOwnerAndManagerMenus(helperFunctions.java:862)
+	at LRS2_0.runTests.WEB_1760(runTests.java:405)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WEB_1762">
+                  </a> <!-- WEB_1762 -->
+                  <span class="method-name">WEB_1762</span>
+                  <div class="stack-trace">java.lang.AssertionError: Arrays not equal: [Locations, Users] and [, null]
+	at LRS2_0.helperFunctions.checkAccountOwnerAndManagerMenus(helperFunctions.java:867)
+	at LRS2_0.runTests.WEB_1762(runTests.java:418)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LRS2_0-class-failed -->
+          <div class="suite-LRS2_0-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">LRS2_0.runTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="WEB_1259">
+                  </a> <!-- WEB_1259 -->
+                  <span class="method-name">WEB_1259</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WEB_1260">
+                  </a> <!-- WEB_1260 -->
+                  <span class="method-name">WEB_1260</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WEB_1758">
+                  </a> <!-- WEB_1758 -->
+                  <span class="method-name">WEB_1758</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WEB_1759">
+                  </a> <!-- WEB_1759 -->
+                  <span class="method-name">WEB_1759</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LRS2_0-class-passed -->
+        </div> <!-- panel LRS2_0 -->
+        <div panel-name="test-xml-LRS2_0" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/synerzip/Himanshu/LRSworkspace/2.0/src/test/java/LRS2_0/LRS2.0.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;LRS2_0&quot;&gt;
+  &lt;test name=&quot;LRS2.0_AllTests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;LRS2_0.runTests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;WEB-1026&quot;/&gt;
+          &lt;include name=&quot;WEB_1257&quot;/&gt;
+          &lt;include name=&quot;WEB_1259&quot;/&gt;
+          &lt;include name=&quot;WEB_1260&quot;/&gt;
+          &lt;include name=&quot;WEB_1262&quot;/&gt;
+          &lt;include name=&quot;WEB_1263&quot;/&gt;
+          &lt;include name=&quot;WEB_1264&quot;/&gt;
+          &lt;include name=&quot;WEB_1273&quot;/&gt;
+          &lt;include name=&quot;WEB_1758&quot;/&gt;
+          &lt;include name=&quot;WEB_1759&quot;/&gt;
+          &lt;include name=&quot;WEB_1760&quot;/&gt;
+          &lt;include name=&quot;WEB_1762&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- LRS2_0.runTests --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LRS2.0_AllTests --&gt;
+&lt;/suite&gt; &lt;!-- LRS2_0 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-LRS2_0" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for LRS2_0</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">LRS2.0_AllTests (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-LRS2_0" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for LRS2_0</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-LRS2_0" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for LRS2_0</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_LRS2_0');
+function tableData_LRS2_0() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'WEB_1273')
+data.setCell(0, 2, 'LRS2_0.runTests')
+data.setCell(0, 3, 47641737);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'WEB_1257')
+data.setCell(1, 2, 'LRS2_0.runTests')
+data.setCell(1, 3, 98162);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'WEB_1262')
+data.setCell(2, 2, 'LRS2_0.runTests')
+data.setCell(2, 3, 73169);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'WEB_1263')
+data.setCell(3, 2, 'LRS2_0.runTests')
+data.setCell(3, 3, 70211);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'WEB_1264')
+data.setCell(4, 2, 'LRS2_0.runTests')
+data.setCell(4, 3, 65086);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'WEB_1758')
+data.setCell(5, 2, 'LRS2_0.runTests')
+data.setCell(5, 3, 22934);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'WEB_1762')
+data.setCell(6, 2, 'LRS2_0.runTests')
+data.setCell(6, 3, 15289);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'WEB_1760')
+data.setCell(7, 2, 'LRS2_0.runTests')
+data.setCell(7, 3, 14646);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'WEB_1260')
+data.setCell(8, 2, 'LRS2_0.runTests')
+data.setCell(8, 3, 11625);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'WEB_1759')
+data.setCell(9, 2, 'LRS2_0.runTests')
+data.setCell(9, 3, 10095);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'WEB_1259')
+data.setCell(10, 2, 'LRS2_0.runTests')
+data.setCell(10, 3, 8738);
+window.suiteTableData['LRS2_0']= { tableData: data, tableDiv: 'times-div-LRS2_0'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 13 hours</span>
+              <div id="times-div-LRS2_0">
+              </div> <!-- times-div-LRS2_0 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-LRS2_0" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for LRS2_0</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-LRS2_0" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">LRS2_0.runTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">WEB_1026</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-LRS2_0" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">LRS2_0.runTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">WEB_1257</span>
+                <span class="method-start">4142 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanupTest</span>
+                <span class="method-start">102568 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">105946 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">WEB_1259</span>
+                <span class="method-start">106742 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanupTest</span>
+                <span class="method-start">115480 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">118859 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">WEB_1260</span>
+                <span class="method-start">119693 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanupTest</span>
+                <span class="method-start">131318 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">134709 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">WEB_1262</span>
+                <span class="method-start">135474 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanupTest</span>
+                <span class="method-start">208644 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">212007 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">WEB_1263</span>
+                <span class="method-start">212775 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanupTest</span>
+                <span class="method-start">283285 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">346820 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">WEB_1264</span>
+                <span class="method-start">347978 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanupTest</span>
+                <span class="method-start">413387 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">481578 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">WEB_1273</span>
+                <span class="method-start">482785 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanupTest</span>
+                <span class="method-start">48124523 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">48124531 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">WEB_1758</span>
+                <span class="method-start">48127316 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanupTest</span>
+                <span class="method-start">48150250 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">48153650 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">WEB_1759</span>
+                <span class="method-start">48154402 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanupTest</span>
+                <span class="method-start">48164497 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">48167901 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">WEB_1760</span>
+                <span class="method-start">48168657 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanupTest</span>
+                <span class="method-start">48183304 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">48190373 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">WEB_1762</span>
+                <span class="method-start">48191115 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanupTest</span>
+                <span class="method-start">48206405 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

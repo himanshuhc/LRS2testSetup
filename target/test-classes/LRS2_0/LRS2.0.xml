@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="LRS2_0">
+    
+  <test name="LRS2.0_AllTests" preserve-order="true">
+      <classes>
+          <class name="LRS2_0.runTests">
+              <methods>
+                   <include name="WEB_1026__WEB_1038__WEB_1807"/>         
+                   <include name="WEB_1257__WEB_1276"/>
+                   <include name="WEB_1259"/>
+                   <include name="WEB_1260__WEB_1267"/> 
+                   <include name="WEB_1262"/>
+                   <include name="WEB_1263"/>
+                   <include name="WEB_1264__WEB_1277"/>
+                   <include name="WEB_1273"/>
+                   <include name="WEB_1758"/>
+                   <include name="WEB_1759"/>
+                   <include name="WEB_1760"/>
+                   <include name="WEB_1762"/>
+                   <include name="WEB_1764"/>
+                   <include name="WEB_1775"/>
+                   <include name="WEB_1824"/>
+                   <include name="WEB_1827__WEB_1828__WEB_1955__WEB_1953__WEB_1954__WEB_1984__WEB_1964__WEB_1968"/>
+                   <include name="WEB_1959"/>
+                   <include name="WEB_1963__WEB_1969__WEB_1970__WEB_1948__WEB_1990__WEB_1991"/>
+                   <include name="WEB_1989__WEB_1994"/>
+                   <!-- Akshay's Tests start below -->
+                   <include name="WEB_1281"/>
+                   <include name="WEB_1282"/>
+                   <include name="WEB_1655__WEB_1656"/>
+                   <include name="WEB_1287"/>
+                   <include name="WEB_1292"/>
+                   <include name="WEB_1371__WEB_1383__WEB_1390"/>
+                   <include name="WEB_1396"/> 
+                   <include name="WEB_2164"/>
+                   <include name="WEB_1401"/>
+              </methods>    
+          </class>
+      </classes>
+  </test>  
+ 
+  
+</suite>

@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">LRS2_0</th></tr><tr><td><a href="#t0">LRS2.0_AllTests</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">7</td><td class="num">48,209,979</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">LRS2_0</th></tr></tbody><tbody id="t0"><tr><th colspan="4">LRS2.0_AllTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="7">LRS2_0.runTests</td><td><a href="#m0">WEB_1257</a></td><td rowspan="1">1407329002698</td><td rowspan="1">98162</td></tr><tr class="failedeven"><td><a href="#m1">WEB_1262</a></td><td rowspan="1">1407329134030</td><td rowspan="1">73169</td></tr><tr class="failedeven"><td><a href="#m2">WEB_1263</a></td><td rowspan="1">1407329211331</td><td rowspan="1">70211</td></tr><tr class="failedeven"><td><a href="#m3">WEB_1264</a></td><td rowspan="1">1407329346534</td><td rowspan="1">65086</td></tr><tr class="failedeven"><td><a href="#m4">WEB_1273</a></td><td rowspan="1">1407329481341</td><td rowspan="1">47641737</td></tr><tr class="failedeven"><td><a href="#m5">WEB_1760</a></td><td rowspan="1">1407377167213</td><td rowspan="1">14646</td></tr><tr class="failedeven"><td><a href="#m6">WEB_1762</a></td><td rowspan="1">1407377189671</td><td rowspan="1">15289</td></tr><tr><th colspan="4">LRS2.0_AllTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">LRS2_0.runTests</td><td><a href="#m7">WEB_1259</a></td><td rowspan="1">1407329105298</td><td rowspan="1">8738</td></tr><tr class="passedeven"><td><a href="#m8">WEB_1260</a></td><td rowspan="1">1407329118249</td><td rowspan="1">11625</td></tr><tr class="passedeven"><td><a href="#m9">WEB_1758</a></td><td rowspan="1">1407377125872</td><td rowspan="1">22934</td></tr><tr class="passedeven"><td><a href="#m10">WEB_1759</a></td><td rowspan="1">1407377152958</td><td rowspan="1">10095</td></tr></tbody></table><h2>LRS2.0_AllTests</h2><h3 id="m0">LRS2_0.runTests#WEB_1257</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Could not find element: {&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//button[(contains(@style,&apos;inline-block&apos;)) and (text()=&apos;Save&apos;)]&quot;} (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.11 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;imac-24.local&apos;, ip: &apos;172.25.35.16&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.2&apos;, java.version: &apos;1.7.0_45&apos;
+Session ID: null
+Driver info: org.openqa.selenium.safari.SafariDriver
+Capabilities [{platform=MAC, cssSelectorsEnabled=true, javascriptEnabled=true, secureSsl=true, browserName=safari, takesScreenshot=true, version=7.0.3}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at LRS2_0.helperFunctions.clickUsingJS(helperFunctions.java:465)
+	at LRS2_0.helperFunctions.click(helperFunctions.java:148)
+	at LRS2_0.helperFunctions.addLocation(helperFunctions.java:301)
+	at LRS2_0.runTests.WEB_1257(runTests.java:158)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">LRS2_0.runTests#WEB_1262</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at LRS2_0.runTests.WEB_1262(runTests.java:295)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">LRS2_0.runTests#WEB_1263</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Timed out after 60 seconds while waiting for Ajax to complete.
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;imac-24.local&apos;, ip: &apos;172.25.35.16&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.2&apos;, java.version: &apos;1.7.0_45&apos;
+Driver info: driver.version: unknown
+	at LRS2_0.helperFunctions.waitForAjaxRefresh(helperFunctions.java:100)
+	at LRS2_0.helperFunctions.login(helperFunctions.java:490)
+	at LRS2_0.runTests.WEB_1263(runTests.java:313)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">LRS2_0.runTests#WEB_1264</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Timed out after 60 seconds while waiting for Ajax to complete.
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;imac-24.local&apos;, ip: &apos;172.25.35.16&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.2&apos;, java.version: &apos;1.7.0_45&apos;
+Driver info: driver.version: unknown
+	at LRS2_0.helperFunctions.waitForAjaxRefresh(helperFunctions.java:100)
+	at LRS2_0.helperFunctions.login(helperFunctions.java:490)
+	at LRS2_0.runTests.WEB_1264(runTests.java:349)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">LRS2_0.runTests#WEB_1273</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;imac-24.local&apos;, ip: &apos;172.25.35.16&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.2&apos;, java.version: &apos;1.7.0_45&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at LRS2_0.AccountOwner.login(AccountOwner.java:21)
+	at LRS2_0.runTests.WEB_1273(runTests.java:370)
+Caused by: org.openqa.selenium.safari.ConnectionClosedException: The underlying channel was closed
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;imac-24.local&apos;, ip: &apos;172.25.35.16&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.2&apos;, java.version: &apos;1.7.0_45&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.safari.WebSocketConnection$2.operationComplete(WebSocketConnection.java:79)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:428)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListeners(DefaultChannelFuture.java:419)
+	at org.jboss.netty.channel.DefaultChannelFuture.setSuccess(DefaultChannelFuture.java:363)
+	at org.jboss.netty.channel.AbstractChannel$ChannelCloseFuture.setClosed(AbstractChannel.java:353)
+	at org.jboss.netty.channel.AbstractChannel.setClosed(AbstractChannel.java:183)
+	at org.jboss.netty.channel.socket.nio.AbstractNioChannel.setClosed(AbstractNioChannel.java:200)
+	at org.jboss.netty.channel.socket.nio.NioSocketChannel.setClosed(NioSocketChannel.java:85)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.close(AbstractNioWorker.java:613)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:98)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.processSelectedKeys(AbstractNioWorker.java:373)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:247)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:35)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">LRS2_0.runTests#WEB_1760</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ArrayIndexOutOfBoundsException: 2
+	at LRS2_0.helperFunctions.checkAccountOwnerAndManagerMenus(helperFunctions.java:862)
+	at LRS2_0.runTests.WEB_1760(runTests.java:405)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">LRS2_0.runTests#WEB_1762</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Arrays not equal: [Locations, Users] and [, null]
+	at LRS2_0.helperFunctions.checkAccountOwnerAndManagerMenus(helperFunctions.java:867)
+	at LRS2_0.runTests.WEB_1762(runTests.java:418)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m7">LRS2_0.runTests#WEB_1259</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m8">LRS2_0.runTests#WEB_1260</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m9">LRS2_0.runTests#WEB_1758</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m10">LRS2_0.runTests#WEB_1759</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

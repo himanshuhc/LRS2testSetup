@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[WEB-1401<br>]]>
+    </line>
+    <line>
+      <![CDATA[Login by Superadmin credentials<br>]]>
+    </line>
+    <line>
+      <![CDATA[Logging in as Superadmin User: superadmin@lrs.com on IE on Windows<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for element By.id: btnLoginSubmit to exist<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By.id: btnLoginSubmit: true<br>]]>
+    </line>
+    <line>
+      <![CDATA[Found Element: By.id: btnLoginSubmit<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Attempting to type:superadmin@lrs.com inside By.selector: *[id='j_username']<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for element By.selector: *[id='j_username'] to be visible<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Found visible Element: By.selector: *[id='j_username']<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Successfully typed:superadmin@lrs.com inside By.selector: *[id='j_username']<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Attempting to type:admin inside By.id: j_password<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for element By.id: j_password to be visible<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Found visible Element: By.id: j_password<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Successfully typed:admin inside By.id: j_password<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Going to click on element using JS<br>]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on element using JS<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for element By.xpath: //ul[@id='main-menu-right']//a[@class='dropdown-toggle'] to be visible<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Found visible Element: By.xpath: //ul[@id='main-menu-right']//a[@class='dropdown-toggle']<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Going to click on element using JS: By.linkText: Accounts<br>]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on element using JS: By.linkText: Accounts<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Going to click on element using JS: By.id: addAccount<br>]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on element using JS: By.id: addAccount<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Attempting to type:AutomationName821744 inside By.selector: input.input-block-level.textBox<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for element By.selector: input.input-block-level.textBox to be visible<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Found visible Element: By.selector: input.input-block-level.textBox<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Successfully typed:AutomationName821744 inside By.selector: input.input-block-level.textBox<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Attempting to type:Automationmail7992@gmail.com inside By.xpath: //input[@name ='email' and @placeholder='Email Address']<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for element By.xpath: //input[@name ='email' and @placeholder='Email Address'] to be visible<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Found visible Element: By.xpath: //input[@name ='email' and @placeholder='Email Address']<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Successfully typed:Automationmail7992@gmail.com inside By.xpath: //input[@name ='email' and @placeholder='Email Address']<br>]]>
+    </line>
+    <line>
+      <![CDATA[Selecting Active state for all products<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Going to click on element using JS: By.xpath: //label[text()='On Cue Restaurants']//ancestor::tr//div[@class='selectric']<br>]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on element using JS: By.xpath: //label[text()='On Cue Restaurants']//ancestor::tr//div[@class='selectric']<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Going to click on element using JS: By.xpath: //label[text()='On Cue Restaurants']//ancestor::tr//*[@class='selectricItems']/ul/li[@class='last']<br>]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on element using JS: By.xpath: //label[text()='On Cue Restaurants']//ancestor::tr//*[@class='selectricItems']/ul/li[@class='last']<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Going to click on element using JS: By.xpath: //label[text()='Table Tracker']//ancestor::tr//div[@class='selectric']<br>]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on element using JS: By.xpath: //label[text()='Table Tracker']//ancestor::tr//div[@class='selectric']<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Going to click on element using JS: By.xpath: //label[text()='Table Tracker']//ancestor::tr//*[@class='selectricItems']/ul/li[@class='last']<br>]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on element using JS: By.xpath: //label[text()='Table Tracker']//ancestor::tr//*[@class='selectricItems']/ul/li[@class='last']<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Going to click on element using JS: By.xpath: //label[text()='Check Point']//ancestor::tr//div[@class='selectric']<br>]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on element using JS: By.xpath: //label[text()='Check Point']//ancestor::tr//div[@class='selectric']<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Going to click on element using JS: By.xpath: //label[text()='Check Point']//ancestor::tr//*[@class='selectricItems']/ul/li[@class='last']<br>]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on element using JS: By.xpath: //label[text()='Check Point']//ancestor::tr//*[@class='selectricItems']/ul/li[@class='last']<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on Save button<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Going to click on element using JS: By.xpath: //div[@class='mdDetailFooterRight']/button[@class='btn btn-primary saveModelBtn']<br>]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on element using JS: By.xpath: //div[@class='mdDetailFooterRight']/button[@class='btn btn-primary saveModelBtn']<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Attempting to type:AutomationName821744 inside By.id: mdSearchBox<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for element By.id: mdSearchBox to be visible<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Found visible Element: By.id: mdSearchBox<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Successfully typed:AutomationName821744 inside By.id: mdSearchBox<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Going to click on element using JS: By.id: mdSearchWidgetIcon<br>]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on element using JS: By.id: mdSearchWidgetIcon<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Going to click on element using JS: By.selector: a.dropdown-toggle<br>]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on element using JS: By.selector: a.dropdown-toggle<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Going to click on element using JS: By.xpath: //ul[@class='dropdown-menu']//li/a[contains(text(),' Out')]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on element using JS: By.xpath: //ul[@class='dropdown-menu']//li/a[contains(text(),' Out')]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Ajax Refresh<br>]]>
+    </line>
+    <line>
+      <![CDATA[Signed Out<br>]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="48236" started-at="2014-08-20T13:15:58Z" finished-at="2014-08-20T13:16:46Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="48236" started-at="2014-08-20T13:15:58Z" finished-at="2014-08-20T13:16:46Z">
+      <class name="LRS2_0.runTests">
+        <test-method status="PASS" signature="initSuite()[pri:0, instance:LRS2_0.runTests@5a01ccaa]" name="initSuite" is-config="true" duration-ms="3254" started-at="2014-08-20T18:45:54Z" finished-at="2014-08-20T18:45:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSuite -->
+        <test-method status="PASS" signature="WEB_1401()[pri:0, instance:LRS2_0.runTests@5a01ccaa]" name="WEB_1401" duration-ms="44168" started-at="2014-08-20T18:45:58Z" finished-at="2014-08-20T18:46:42Z">
+          <reporter-output>
+            <line>
+              <![CDATA[WEB-1401<br>]]>
+            </line>
+            <line>
+              <![CDATA[Login by Superadmin credentials<br>]]>
+            </line>
+            <line>
+              <![CDATA[Logging in as Superadmin User: superadmin@lrs.com on IE on Windows<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for element By.id: btnLoginSubmit to exist<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By.id: btnLoginSubmit: true<br>]]>
+            </line>
+            <line>
+              <![CDATA[Found Element: By.id: btnLoginSubmit<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Attempting to type:superadmin@lrs.com inside By.selector: *[id='j_username']<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for element By.selector: *[id='j_username'] to be visible<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Found visible Element: By.selector: *[id='j_username']<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Successfully typed:superadmin@lrs.com inside By.selector: *[id='j_username']<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Attempting to type:admin inside By.id: j_password<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for element By.id: j_password to be visible<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Found visible Element: By.id: j_password<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Successfully typed:admin inside By.id: j_password<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Going to click on element using JS<br>]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on element using JS<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for element By.xpath: //ul[@id='main-menu-right']//a[@class='dropdown-toggle'] to be visible<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Found visible Element: By.xpath: //ul[@id='main-menu-right']//a[@class='dropdown-toggle']<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Going to click on element using JS: By.linkText: Accounts<br>]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on element using JS: By.linkText: Accounts<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Going to click on element using JS: By.id: addAccount<br>]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on element using JS: By.id: addAccount<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Attempting to type:AutomationName821744 inside By.selector: input.input-block-level.textBox<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for element By.selector: input.input-block-level.textBox to be visible<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Found visible Element: By.selector: input.input-block-level.textBox<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Successfully typed:AutomationName821744 inside By.selector: input.input-block-level.textBox<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Attempting to type:Automationmail7992@gmail.com inside By.xpath: //input[@name ='email' and @placeholder='Email Address']<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for element By.xpath: //input[@name ='email' and @placeholder='Email Address'] to be visible<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Found visible Element: By.xpath: //input[@name ='email' and @placeholder='Email Address']<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Successfully typed:Automationmail7992@gmail.com inside By.xpath: //input[@name ='email' and @placeholder='Email Address']<br>]]>
+            </line>
+            <line>
+              <![CDATA[Selecting Active state for all products<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Going to click on element using JS: By.xpath: //label[text()='On Cue Restaurants']//ancestor::tr//div[@class='selectric']<br>]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on element using JS: By.xpath: //label[text()='On Cue Restaurants']//ancestor::tr//div[@class='selectric']<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Going to click on element using JS: By.xpath: //label[text()='On Cue Restaurants']//ancestor::tr//*[@class='selectricItems']/ul/li[@class='last']<br>]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on element using JS: By.xpath: //label[text()='On Cue Restaurants']//ancestor::tr//*[@class='selectricItems']/ul/li[@class='last']<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Going to click on element using JS: By.xpath: //label[text()='Table Tracker']//ancestor::tr//div[@class='selectric']<br>]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on element using JS: By.xpath: //label[text()='Table Tracker']//ancestor::tr//div[@class='selectric']<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Going to click on element using JS: By.xpath: //label[text()='Table Tracker']//ancestor::tr//*[@class='selectricItems']/ul/li[@class='last']<br>]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on element using JS: By.xpath: //label[text()='Table Tracker']//ancestor::tr//*[@class='selectricItems']/ul/li[@class='last']<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Going to click on element using JS: By.xpath: //label[text()='Check Point']//ancestor::tr//div[@class='selectric']<br>]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on element using JS: By.xpath: //label[text()='Check Point']//ancestor::tr//div[@class='selectric']<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Going to click on element using JS: By.xpath: //label[text()='Check Point']//ancestor::tr//*[@class='selectricItems']/ul/li[@class='last']<br>]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on element using JS: By.xpath: //label[text()='Check Point']//ancestor::tr//*[@class='selectricItems']/ul/li[@class='last']<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on Save button<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Going to click on element using JS: By.xpath: //div[@class='mdDetailFooterRight']/button[@class='btn btn-primary saveModelBtn']<br>]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on element using JS: By.xpath: //div[@class='mdDetailFooterRight']/button[@class='btn btn-primary saveModelBtn']<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Attempting to type:AutomationName821744 inside By.id: mdSearchBox<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for element By.id: mdSearchBox to be visible<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Found visible Element: By.id: mdSearchBox<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Successfully typed:AutomationName821744 inside By.id: mdSearchBox<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Going to click on element using JS: By.id: mdSearchWidgetIcon<br>]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on element using JS: By.id: mdSearchWidgetIcon<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- WEB_1401 -->
+        <test-method status="PASS" signature="initTest()[pri:0, instance:LRS2_0.runTests@5a01ccaa]" name="initTest" is-config="true" duration-ms="0" started-at="2014-08-20T18:45:58Z" finished-at="2014-08-20T18:45:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="PASS" signature="cleanupTest(org.testng.ITestResult)[pri:0, instance:LRS2_0.runTests@5a01ccaa]" name="cleanupTest" is-config="true" duration-ms="4056" started-at="2014-08-20T18:46:42Z" finished-at="2014-08-20T18:46:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=WEB_1401 status=SUCCESS method=runTests.WEB_1401()[pri:0, instance:LRS2_0.runTests@5a01ccaa] output=WEB-1401<br>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Going to click on element using JS: By.selector: a.dropdown-toggle<br>]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on element using JS: By.selector: a.dropdown-toggle<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Going to click on element using JS: By.xpath: //ul[@class='dropdown-menu']//li/a[contains(text(),' Out')]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on element using JS: By.xpath: //ul[@class='dropdown-menu']//li/a[contains(text(),' Out')]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Ajax Refresh<br>]]>
+            </line>
+            <line>
+              <![CDATA[Signed Out<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- cleanupTest -->
+        <test-method status="PASS" signature="cleanSuite()[pri:0, instance:LRS2_0.runTests@5a01ccaa]" name="cleanSuite" is-config="true" duration-ms="1025" started-at="2014-08-20T18:46:46Z" finished-at="2014-08-20T18:46:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanSuite -->
+      </class> <!-- LRS2_0.runTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

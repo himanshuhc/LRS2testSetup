@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-passed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\himanshuc\AppData\Local\Temp\testng-eclipse--1846667744\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="LRS2_0.runTests" hash-for-method="WEB_1401">WEB_1401</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">LRS2_0.runTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="WEB_1401">
+                  </a> <!-- WEB_1401 -->
+                  <span class="method-name">WEB_1401</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\himanshuc\AppData\Local\Temp\testng-eclipse--1846667744\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;LRS2_0.runTests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;WEB_1401&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- LRS2_0.runTests --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'WEB_1401')
+data.setCell(0, 2, 'LRS2_0.runTests')
+data.setCell(0, 3, 44168);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 44 seconds</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">WEB_1401</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">WEB-1401<br></span>
+                <span class="reporter-method-output">Login by Superadmin credentials<br></span>
+                <span class="reporter-method-output">Logging in as Superadmin User: superadmin@lrs.com on IE on Windows<br></span>
+                <span class="reporter-method-output">Waiting for element By.id: btnLoginSubmit to exist<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Found Element By.id: btnLoginSubmit: true<br></span>
+                <span class="reporter-method-output">Found Element: By.id: btnLoginSubmit<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Attempting to type:superadmin@lrs.com inside By.selector: *[id='j_username']<br></span>
+                <span class="reporter-method-output">Waiting for element By.selector: *[id='j_username'] to be visible<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Found visible Element: By.selector: *[id='j_username']<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Successfully typed:superadmin@lrs.com inside By.selector: *[id='j_username']<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Attempting to type:admin inside By.id: j_password<br></span>
+                <span class="reporter-method-output">Waiting for element By.id: j_password to be visible<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Found visible Element: By.id: j_password<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Successfully typed:admin inside By.id: j_password<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Going to click on element using JS<br></span>
+                <span class="reporter-method-output">Clicked on element using JS<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for element By.xpath: //ul[@id='main-menu-right']//a[@class='dropdown-toggle'] to be visible<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Found visible Element: By.xpath: //ul[@id='main-menu-right']//a[@class='dropdown-toggle']<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Going to click on element using JS: By.linkText: Accounts<br></span>
+                <span class="reporter-method-output">Clicked on element using JS: By.linkText: Accounts<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Going to click on element using JS: By.id: addAccount<br></span>
+                <span class="reporter-method-output">Clicked on element using JS: By.id: addAccount<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Attempting to type:AutomationName821744 inside By.selector: input.input-block-level.textBox<br></span>
+                <span class="reporter-method-output">Waiting for element By.selector: input.input-block-level.textBox to be visible<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Found visible Element: By.selector: input.input-block-level.textBox<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Successfully typed:AutomationName821744 inside By.selector: input.input-block-level.textBox<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Attempting to type:Automationmail7992@gmail.com inside By.xpath: //input[@name ='email' and @placeholder='Email Address']<br></span>
+                <span class="reporter-method-output">Waiting for element By.xpath: //input[@name ='email' and @placeholder='Email Address'] to be visible<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Found visible Element: By.xpath: //input[@name ='email' and @placeholder='Email Address']<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Successfully typed:Automationmail7992@gmail.com inside By.xpath: //input[@name ='email' and @placeholder='Email Address']<br></span>
+                <span class="reporter-method-output">Selecting Active state for all products<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Going to click on element using JS: By.xpath: //label[text()='On Cue Restaurants']//ancestor::tr//div[@class='selectric']<br></span>
+                <span class="reporter-method-output">Clicked on element using JS: By.xpath: //label[text()='On Cue Restaurants']//ancestor::tr//div[@class='selectric']<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Going to click on element using JS: By.xpath: //label[text()='On Cue Restaurants']//ancestor::tr//*[@class='selectricItems']/ul/li[@class='last']<br></span>
+                <span class="reporter-method-output">Clicked on element using JS: By.xpath: //label[text()='On Cue Restaurants']//ancestor::tr//*[@class='selectricItems']/ul/li[@class='last']<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Going to click on element using JS: By.xpath: //label[text()='Table Tracker']//ancestor::tr//div[@class='selectric']<br></span>
+                <span class="reporter-method-output">Clicked on element using JS: By.xpath: //label[text()='Table Tracker']//ancestor::tr//div[@class='selectric']<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Going to click on element using JS: By.xpath: //label[text()='Table Tracker']//ancestor::tr//*[@class='selectricItems']/ul/li[@class='last']<br></span>
+                <span class="reporter-method-output">Clicked on element using JS: By.xpath: //label[text()='Table Tracker']//ancestor::tr//*[@class='selectricItems']/ul/li[@class='last']<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Going to click on element using JS: By.xpath: //label[text()='Check Point']//ancestor::tr//div[@class='selectric']<br></span>
+                <span class="reporter-method-output">Clicked on element using JS: By.xpath: //label[text()='Check Point']//ancestor::tr//div[@class='selectric']<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Going to click on element using JS: By.xpath: //label[text()='Check Point']//ancestor::tr//*[@class='selectricItems']/ul/li[@class='last']<br></span>
+                <span class="reporter-method-output">Clicked on element using JS: By.xpath: //label[text()='Check Point']//ancestor::tr//*[@class='selectricItems']/ul/li[@class='last']<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Clicking on Save button<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Going to click on element using JS: By.xpath: //div[@class='mdDetailFooterRight']/button[@class='btn btn-primary saveModelBtn']<br></span>
+                <span class="reporter-method-output">Clicked on element using JS: By.xpath: //div[@class='mdDetailFooterRight']/button[@class='btn btn-primary saveModelBtn']<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Attempting to type:AutomationName821744 inside By.id: mdSearchBox<br></span>
+                <span class="reporter-method-output">Waiting for element By.id: mdSearchBox to be visible<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Found visible Element: By.id: mdSearchBox<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Successfully typed:AutomationName821744 inside By.id: mdSearchBox<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Going to click on element using JS: By.id: mdSearchWidgetIcon<br></span>
+                <span class="reporter-method-output">Clicked on element using JS: By.id: mdSearchWidgetIcon<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+                <span class="reporter-method-output">Waiting for Ajax Refresh<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">27 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">LRS2_0.runTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">WEB_1282</span>
+                <br/>
+                <span class="ignored-method-name">WEB_1263</span>
+                <br/>
+                <span class="ignored-method-name">WEB_1260__WEB_1267</span>
+                <br/>
+                <span class="ignored-method-name">WEB_1281</span>
+                <br/>
+                <span class="ignored-method-name">WEB_1764</span>
+                <br/>
+                <span class="ignored-method-name">WEB_1371__WEB_1383__WEB_1390</span>
+                <br/>
+                <span class="ignored-method-name">WEB_1262</span>
+                <br/>
+                <span class="ignored-method-name">WEB_1026__WEB_1038__WEB_1807</span>
+                <br/>
+                <span class="ignored-method-name">WEB_1760</span>
+                <br/>
+                <span class="ignored-method-name">WEB_1287</span>
+                <br/>
+                <span class="ignored-method-name">WEB_1762</span>
+                <br/>
+                <span class="ignored-method-name">WEB_1827__WEB_1828__WEB_1955__WEB_1953__WEB_1954__WEB_1984__WEB_1964__WEB_1968</span>
+                <br/>
+                <span class="ignored-method-name">WEB_1824</span>
+                <br/>
+                <span class="ignored-method-name">WEB_1655__WEB_1656</span>
+                <br/>
+                <span class="ignored-method-name">WEB_1989__WEB_1994</span>
+                <br/>
+                <span class="ignored-method-name">WEB_1264__WEB_1277</span>
+                <br/>
+                <span class="ignored-method-name">WEB_1292</span>
+                <br/>
+                <span class="ignored-method-name">WEB_1775</span>
+                <br/>
+                <span class="ignored-method-name">WEB_1273</span>
+                <br/>
+                <span class="ignored-method-name">WEB_1963__WEB_1969__WEB_1970__WEB_1948__WEB_1990__WEB_1991</span>
+                <br/>
+                <span class="ignored-method-name">WEB_1396</span>
+                <br/>
+                <span class="ignored-method-name">WEB_2164</span>
+                <br/>
+                <span class="ignored-method-name">WEB_1758</span>
+                <br/>
+                <span class="ignored-method-name">WEB_1959</span>
+                <br/>
+                <span class="ignored-method-name">WEB_1257__WEB_1276</span>
+                <br/>
+                <span class="ignored-method-name">WEB_1259</span>
+                <br/>
+                <span class="ignored-method-name">WEB_1759</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">LRS2_0.runTests</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">initSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">WEB_1401</span>
+                <span class="method-start">3265 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">3265 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanupTest([TestResult name=WEB_1401 status=SUCCESS method=runTests.WEB_1401()[pri:0, instance:LRS2_0.runTests@...)</span>
+                <span class="method-start">47434 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">cleanSuite</span>
+                <span class="method-start">51509 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
