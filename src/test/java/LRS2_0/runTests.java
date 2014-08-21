@@ -8,7 +8,6 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Platform;
 import org.openqa.selenium.UnhandledAlertException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,7 +17,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
-import org.openqa.selenium.safari.SafariOptions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -122,17 +120,15 @@ public class runTests
 				// capa.setSkipExtensionInstallation(true);
 				// driver = new SafariDriver(capa);
 
-				DesiredCapabilities dc = DesiredCapabilities.safari();
-				SafariOptions safariOptions = new SafariOptions();
-				safariOptions.setUseCleanSession(true);
-				dc.setCapability(SafariOptions.CAPABILITY, safariOptions);
-				// dc.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR,
-				// UnexpectedAlertBehaviour.IGNORE);
-				dc.setPlatform(Platform.MAC);
-				driver = new SafariDriver(dc);
+				// DesiredCapabilities dc = DesiredCapabilities.safari();
+				// SafariOptions safariOptions = new SafariOptions();
+				// safariOptions.setUseCleanSession(true);
+				// dc.setCapability(SafariOptions.CAPABILITY, safariOptions);
+				// dc.setPlatform(Platform.MAC);
+				// driver = new SafariDriver(dc);
 
 				// safari
-				// driver = new SafariDriver();
+				driver = new SafariDriver();
 
 				// javascriptMax
 				// .executeScript("window.resizeTo('width=window.screen.availWidth,"
