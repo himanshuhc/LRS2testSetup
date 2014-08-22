@@ -69,49 +69,49 @@ public class runTests
 				driver = new FirefoxDriver();
 			else if (browserName.equals("Chrome"))
 			{
-				// File file = new File("driversWindows/chromedriver.exe");
-				// System.setProperty( "webdriver.chrome.driver",
-				// file.getAbsolutePath());
+				File file = new File("driversWindows/chromedriver.exe");
+				System.setProperty( "webdriver.chrome.driver",
+				file.getAbsolutePath());
 
-				// DesiredCapabilities capabilities =
-				// DesiredCapabilities.chrome();
-				// ChromeOptions options = new ChromeOptions();
-				// options.addArguments("test-type");
-				// capabilities.setCapability(ChromeOptions.CAPABILITY,
-				// options);
-				// driver = new ChromeDriver(capabilities);
+				DesiredCapabilities capabilities =
+				DesiredCapabilities.chrome();
+				ChromeOptions options = new ChromeOptions();
+				options.addArguments("test-type");
+				capabilities.setCapability(ChromeOptions.CAPABILITY,
+				options);
+				driver = new ChromeDriver(capabilities);
 
 				/************
 				 * Grid setup
 				 */
 
-				File file = new File("driversWindows/chromedriver.exe");
-				System.setProperty(	"webdriver.chrome.driver",
-									file.getAbsolutePath());
+				// File file = new File("driversWindows/chromedriver.exe");
+				// System.setProperty(	"webdriver.chrome.driver",
+									// file.getAbsolutePath());
 
-				threadDriver = new ThreadLocal<RemoteWebDriver>();
+				// threadDriver = new ThreadLocal<RemoteWebDriver>();
 
-				DesiredCapabilities dc = DesiredCapabilities.chrome();
-				ChromeOptions options = new ChromeOptions();
-				options.addArguments("test-type");
-				dc.setCapability(ChromeOptions.CAPABILITY, options);
-				dc.setPlatform(Platform.WINDOWS);
+				// DesiredCapabilities dc = DesiredCapabilities.chrome();
+				// ChromeOptions options = new ChromeOptions();
+				// options.addArguments("test-type");
+				// dc.setCapability(ChromeOptions.CAPABILITY, options);
+				// dc.setPlatform(Platform.WINDOWS);
 
-				dc.setBrowserName(DesiredCapabilities.chrome().getBrowserName());
-				try
-				{
-					threadDriver.set(new RemoteWebDriver(
-															new URL(
-																	"http://localhost:4444/wd/hub"),
-															dc));
-				}
-				catch (MalformedURLException e)
-				{
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+				// dc.setBrowserName(DesiredCapabilities.chrome().getBrowserName());
+				// try
+				// {
+					// threadDriver.set(new RemoteWebDriver(
+															// new URL(
+																	// "http://localhost:4444/wd/hub"),
+															// dc));
+				// }
+				// catch (MalformedURLException e)
+				// {
+					TODO Auto-generated catch block
+					// e.printStackTrace();
+				// }
 
-				driver = threadDriver.get();
+				// driver = threadDriver.get();
 				/*****
 				 * Setup done
 				 */
