@@ -159,7 +159,7 @@ public class runTests
 				{
 					threadDriver.set(new RemoteWebDriver(
 															new URL(
-																	"http://localhost:4444/wd/hub"),
+																	"http://192.168.7.200:4444/wd/hub"),
 															dc));
 				}
 				catch (MalformedURLException e)
