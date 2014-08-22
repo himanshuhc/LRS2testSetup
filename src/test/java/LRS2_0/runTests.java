@@ -16,7 +16,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -122,14 +121,56 @@ public class runTests
 			else
 			// IE
 			{
+				// File file = new File("driversWindows/IEDriverServer_32.exe");
+				// System.setProperty( "webdriver.ie.driver",
+				// file.getAbsolutePath());
+				//
+				// DesiredCapabilities caps =
+				// DesiredCapabilities.internetExplorer();
+				// caps.setCapability(
+				// InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,
+				// true);
+				// driver = new InternetExplorerDriver(caps);
+
+				/************
+				 * Grid setup
+				 */
+
 				File file = new File("driversWindows/IEDriverServer_32.exe");
 				System.setProperty(	"webdriver.ie.driver",
 									file.getAbsolutePath());
 
-				DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
-				caps.setCapability(	InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,
-									true);
-				driver = new InternetExplorerDriver(caps);
+				threadDriver = new ThreadLocal<RemoteWebDriver>();
+
+				DesiredCapabilities dc = DesiredCapabilities.internetExplorer();
+				// ChromeOptions options = new ChromeOptions();
+				// options.addArguments("test-type");
+				// dc.setCapability(ChromeOptions.CAPABILITY, options);
+				// dc.setPlatform(Platform.WINDOWS);
+				// dc.setBrowserName("chrome");
+
+				dc.setBrowserName(DesiredCapabilities.internetExplorer()
+														.getBrowserName());
+				dc.setPlatform(DesiredCapabilities.internetExplorer()
+													.getPlatform());
+				dc.setVersion(DesiredCapabilities.internetExplorer()
+													.getVersion());
+				try
+				{
+					threadDriver.set(new RemoteWebDriver(
+															new URL(
+																	"http://127.0.0.1:4444/wd/hub"),
+															dc));
+				}
+				catch (MalformedURLException e)
+				{
+					e.printStackTrace();
+				}
+
+				driver = threadDriver.get();
+				/*****
+				 * Setup done
+				 */
 			}
 		}
 		else
