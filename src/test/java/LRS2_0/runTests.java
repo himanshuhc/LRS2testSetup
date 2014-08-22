@@ -126,6 +126,7 @@ public class runTests
 				// dc.setCapability(SafariOptions.CAPABILITY, safariOptions);
 				// dc.setPlatform(Platform.MAC);
 				// driver = new SafariDriver(dc);
+				//
 
 				// safari
 				driver = new SafariDriver();
