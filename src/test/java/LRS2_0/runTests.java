@@ -164,6 +164,7 @@ public class runTests
 				}
 				catch (MalformedURLException e)
 				{
+					System.out.println("Exception caught here in IE catch!");
 					e.printStackTrace();
 				}
 
