@@ -73,7 +73,7 @@ public class runTests
 				System.setProperty( "webdriver.chrome.driver",
 				file.getAbsolutePath());
 
-				DesiredCapabilities capabilities =
+				DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 				DesiredCapabilities.chrome();
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("test-type");
