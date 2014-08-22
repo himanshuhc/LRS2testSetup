@@ -17,7 +17,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -248,11 +247,54 @@ public class runTests
 				//
 
 				// safari
-				driver = new SafariDriver();
+				// driver = new SafariDriver();
 
 				// javascriptMax
 				// .executeScript("window.resizeTo('width=window.screen.availWidth,"
 				// + "height=window.screen.availHeight,top=0,left=0')");
+
+				/************
+				 * Grid setup
+				 */
+
+				// File file = new File("driversWindows/chromedriver.exe");
+				// System.setProperty( "webdriver.chrome.driver",
+				// file.getAbsolutePath());
+
+				threadDriver = new ThreadLocal<RemoteWebDriver>();
+
+				DesiredCapabilities dc = DesiredCapabilities.safari();
+				// ChromeOptions options = new ChromeOptions();
+				// options.addArguments("test-type");
+				// dc.setCapability(ChromeOptions.CAPABILITY, options);
+				// dc.setPlatform(Platform.WINDOWS);
+				// dc.setBrowserName("chrome");
+
+				// dc.setBrowserName(DesiredCapabilities.chrome().getBrowserName());
+				// dc.setPlatform(DesiredCapabilities.chrome().getPlatform());
+				// dc.setVersion(DesiredCapabilities.chrome().getVersion());
+				try
+				{
+					threadDriver.set(new RemoteWebDriver(
+															new URL(
+																	"http://192.168.7.200:4444/wd/hub"),
+															dc));
+				}
+				catch (MalformedURLException e)
+				{
+					e.printStackTrace();
+				}
+				catch (Exception ex)
+				{
+					System.out.println("Safari Exception Caught...");
+					ex.printStackTrace();
+				}
+
+				driver = threadDriver.get();
+				/*****
+				 * Setup done
+				 */
+
 			}
 
 		}
