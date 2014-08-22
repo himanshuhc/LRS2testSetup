@@ -175,7 +175,6 @@ public class runTests
 
 				DesiredCapabilities dc = DesiredCapabilities.internetExplorer();
 
-				//
 				// dc.setBrowserName(DesiredCapabilities.internetExplorer()
 				// .getBrowserName());
 				// dc.setPlatform(DesiredCapabilities.internetExplorer()
