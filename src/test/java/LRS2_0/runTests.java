@@ -167,6 +167,11 @@ public class runTests
 					System.out.println("Exception caught here in IE catch!");
 					e.printStackTrace();
 				}
+				catch (Exception ex)
+				{
+					System.out.println("IE remoteDriver creation threw exception!!");
+					ex.printStackTrace();
+				}
 
 				driver = threadDriver.get();
 				/*****
