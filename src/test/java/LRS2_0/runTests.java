@@ -1,8 +1,6 @@
 package LRS2_0;
 
 import java.io.File;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -10,7 +8,6 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Platform;
 import org.openqa.selenium.UnhandledAlertException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -70,15 +67,14 @@ public class runTests
 			else if (browserName.equals("Chrome"))
 			{
 				File file = new File("driversWindows/chromedriver.exe");
-				System.setProperty( "webdriver.chrome.driver",
-				file.getAbsolutePath());
+				System.setProperty(	"webdriver.chrome.driver",
+									file.getAbsolutePath());
 
 				DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 				DesiredCapabilities.chrome();
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("test-type");
-				capabilities.setCapability(ChromeOptions.CAPABILITY,
-				options);
+				capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 				driver = new ChromeDriver(capabilities);
 
 				/************
@@ -86,8 +82,8 @@ public class runTests
 				 */
 
 				// File file = new File("driversWindows/chromedriver.exe");
-				// System.setProperty(	"webdriver.chrome.driver",
-									// file.getAbsolutePath());
+				// System.setProperty( "webdriver.chrome.driver",
+				// file.getAbsolutePath());
 
 				// threadDriver = new ThreadLocal<RemoteWebDriver>();
 
@@ -100,15 +96,15 @@ public class runTests
 				// dc.setBrowserName(DesiredCapabilities.chrome().getBrowserName());
 				// try
 				// {
-					// threadDriver.set(new RemoteWebDriver(
-															// new URL(
-																	// "http://localhost:4444/wd/hub"),
-															// dc));
+				// threadDriver.set(new RemoteWebDriver(
+				// new URL(
+				// "http://localhost:4444/wd/hub"),
+				// dc));
 				// }
 				// catch (MalformedURLException e)
 				// {
-					TODO Auto-generated catch block
-					// e.printStackTrace();
+				// TODO Auto-generated catch block
+				// e.printStackTrace();
 				// }
 
 				// driver = threadDriver.get();
