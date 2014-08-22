@@ -10,7 +10,6 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Platform;
 import org.openqa.selenium.UnhandledAlertException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -93,17 +92,20 @@ public class runTests
 				threadDriver = new ThreadLocal<RemoteWebDriver>();
 
 				DesiredCapabilities dc = DesiredCapabilities.chrome();
-				ChromeOptions options = new ChromeOptions();
-				options.addArguments("test-type");
-				dc.setCapability(ChromeOptions.CAPABILITY, options);
-				dc.setPlatform(Platform.WINDOWS);
+				// ChromeOptions options = new ChromeOptions();
+				// options.addArguments("test-type");
+				// dc.setCapability(ChromeOptions.CAPABILITY, options);
+				// dc.setPlatform(Platform.WINDOWS);
+				// dc.setBrowserName("chrome");
 
 				dc.setBrowserName(DesiredCapabilities.chrome().getBrowserName());
+				dc.setPlatform(DesiredCapabilities.chrome().getPlatform());
+				dc.setVersion(DesiredCapabilities.chrome().getVersion());
 				try
 				{
 					threadDriver.set(new RemoteWebDriver(
 															new URL(
-																	"http://192.168.7.200:4444/wd/hub"),
+																	"http://127.0.0.1:4444/wd/hub"),
 															dc));
 				}
 				catch (MalformedURLException e)
