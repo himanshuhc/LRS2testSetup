@@ -30,6 +30,8 @@ import org.testng.annotations.Test;
 public class runTests
 {
 
+	protected ThreadLocal<RemoteWebDriver> threadDriver = null;
+
 	public static WebDriver driver = null;
 	public static Reader read;
 	Superadmin superadmin = null;
