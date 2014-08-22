@@ -1,6 +1,8 @@
 package LRS2_0;
 
 import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -8,6 +10,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.UnhandledAlertException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,6 +19,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
@@ -66,52 +70,52 @@ public class runTests
 			else if (browserName.equals("Chrome"))
 			{
 				// File file = new File("driversWindows/chromedriver.exe");
-				// System.setProperty(	"webdriver.chrome.driver",
-									// file.getAbsolutePath());
+				// System.setProperty( "webdriver.chrome.driver",
+				// file.getAbsolutePath());
 
-				// DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+				// DesiredCapabilities capabilities =
+				// DesiredCapabilities.chrome();
 				// ChromeOptions options = new ChromeOptions();
 				// options.addArguments("test-type");
-				// capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+				// capabilities.setCapability(ChromeOptions.CAPABILITY,
+				// options);
 				// driver = new ChromeDriver(capabilities);
-				
-				
-				
-		/************
-		 * Grid setup
-		 */
 
-		File file = new File("driversWindows/chromedriver.exe");
-		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+				/************
+				 * Grid setup
+				 */
 
-		threadDriver = new ThreadLocal<RemoteWebDriver>();
+				File file = new File("driversWindows/chromedriver.exe");
+				System.setProperty(	"webdriver.chrome.driver",
+									file.getAbsolutePath());
 
-		DesiredCapabilities dc = DesiredCapabilities.chrome();
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("test-type");
-		dc.setCapability(ChromeOptions.CAPABILITY, options);
-		dc.setPlatform(Platform.WINDOWS);
+				threadDriver = new ThreadLocal<RemoteWebDriver>();
 
-		dc.setBrowserName(DesiredCapabilities.chrome().getBrowserName());
-		try
-		{
-			threadDriver.set(new RemoteWebDriver(
-													new URL(
-															"http://localhost:4444/wd/hub"),
-													dc));
-		}
-		catch (MalformedURLException e)
-		{
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+				DesiredCapabilities dc = DesiredCapabilities.chrome();
+				ChromeOptions options = new ChromeOptions();
+				options.addArguments("test-type");
+				dc.setCapability(ChromeOptions.CAPABILITY, options);
+				dc.setPlatform(Platform.WINDOWS);
 
-		driver = threadDriver.get();
-		/*****
-		 * Setup done
-		 */
-		 
-		 
+				dc.setBrowserName(DesiredCapabilities.chrome().getBrowserName());
+				try
+				{
+					threadDriver.set(new RemoteWebDriver(
+															new URL(
+																	"http://localhost:4444/wd/hub"),
+															dc));
+				}
+				catch (MalformedURLException e)
+				{
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+
+				driver = threadDriver.get();
+				/*****
+				 * Setup done
+				 */
+
 			}
 			else
 			// IE
