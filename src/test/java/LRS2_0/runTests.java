@@ -225,9 +225,11 @@ public class runTests
 			}
 
 		}
-
+		System.out.println("..1");
 		driver.manage().window().maximize();
+		System.out.println("..2");
 		driver.manage().timeouts().implicitlyWait(14, TimeUnit.SECONDS);
+		System.out.println("..3");
 
 		superadmin = new Superadmin();
 		admin = new LRSAdmin();
