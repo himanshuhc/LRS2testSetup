@@ -143,18 +143,14 @@ public class runTests
 				threadDriver = new ThreadLocal<RemoteWebDriver>();
 
 				DesiredCapabilities dc = DesiredCapabilities.internetExplorer();
-				// ChromeOptions options = new ChromeOptions();
-				// options.addArguments("test-type");
-				// dc.setCapability(ChromeOptions.CAPABILITY, options);
-				// dc.setPlatform(Platform.WINDOWS);
-				// dc.setBrowserName("chrome");
 
-				dc.setBrowserName(DesiredCapabilities.internetExplorer()
-														.getBrowserName());
-				dc.setPlatform(DesiredCapabilities.internetExplorer()
-													.getPlatform());
-				dc.setVersion(DesiredCapabilities.internetExplorer()
-													.getVersion());
+				//
+				// dc.setBrowserName(DesiredCapabilities.internetExplorer()
+				// .getBrowserName());
+				// dc.setPlatform(DesiredCapabilities.internetExplorer()
+				// .getPlatform());
+				// dc.setVersion(DesiredCapabilities.internetExplorer()
+				// .getVersion());
 				try
 				{
 					threadDriver.set(new RemoteWebDriver(
