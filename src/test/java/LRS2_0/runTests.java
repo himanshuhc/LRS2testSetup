@@ -15,7 +15,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -64,7 +63,39 @@ public class runTests
 		if (platform.equals("Windows"))
 		{
 			if (browserName.equals("Firefox"))
-				driver = new FirefoxDriver();
+			{
+				// driver = new FirefoxDriver();
+				/************
+				 * Grid setup
+				 */
+
+				threadDriver = new ThreadLocal<RemoteWebDriver>();
+
+				DesiredCapabilities dc = DesiredCapabilities.firefox();
+
+				try
+				{
+					threadDriver.set(new RemoteWebDriver(
+															new URL(
+																	"http://192.168.7.200:4444/wd/hub"),
+															dc));
+				}
+				catch (MalformedURLException e)
+				{
+					System.out.println("Exception caught here in firefox catch!");
+					e.printStackTrace();
+				}
+				catch (Exception ex)
+				{
+					System.out.println("firefox remoteDriver creation threw exception!!");
+					ex.printStackTrace();
+				}
+
+				driver = threadDriver.get();
+				/*****
+				 * Setup done
+				 */
+			}
 			else if (browserName.equals("Chrome"))
 			{
 				// File file = new File("driversWindows/chromedriver.exe");
