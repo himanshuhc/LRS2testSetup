@@ -13,6 +13,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.UnhandledAlertException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -112,7 +113,7 @@ public class runTests
 				/************
 				 * Grid setup
 				 */
-
+				System.out.println("IN CHROME!!!!");
 				File file = new File("driversWindows/chromedriver.exe");
 				System.setProperty(	"webdriver.chrome.driver",
 									file.getAbsolutePath());
@@ -120,20 +121,24 @@ public class runTests
 				threadDriver = new ThreadLocal<RemoteWebDriver>();
 
 				DesiredCapabilities dc = DesiredCapabilities.chrome();
-				// ChromeOptions options = new ChromeOptions();
+				ChromeOptions options = new ChromeOptions();
 				// options.addArguments("test-type");
-				// dc.setCapability(ChromeOptions.CAPABILITY, options);
+				// dc.set("browSerName", "PhantomJS");
+				// dc.setCapability("browserName", "PhantomJS");
+				dc.setBrowserName("PhantomJS");
+				dc.setCapability("driverName", "ghostdriver");
+
 				// dc.setPlatform(Platform.WINDOWS);
 				// dc.setBrowserName("chrome");
 
-				dc.setBrowserName(DesiredCapabilities.chrome().getBrowserName());
-				dc.setPlatform(DesiredCapabilities.chrome().getPlatform());
-				dc.setVersion(DesiredCapabilities.chrome().getVersion());
+				// dc.setBrowserName(DesiredCapabilities.chrome().getBrowserName());
+				// dc.setPlatform(DesiredCapabilities.chrome().getPlatform());
+				// dc.setVersion(DesiredCapabilities.chrome().getVersion());
 				try
 				{
 					threadDriver.set(new RemoteWebDriver(
 															new URL(
-																	"http://192.168.7.200:4444/wd/hub"),
+																	"http://localhost:4444/wd/hub"),
 															dc));
 				}
 				catch (MalformedURLException e)
