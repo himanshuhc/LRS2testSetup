@@ -13,8 +13,6 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.UnhandledAlertException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -71,6 +69,7 @@ public class runTests
 				threadDriver = new ThreadLocal<RemoteWebDriver>();
 
 				DesiredCapabilities dc = DesiredCapabilities.firefox();
+				// dc.setCapability(FirefoxDriver.BINARY, "");
 
 				try
 				{
@@ -212,24 +211,56 @@ public class runTests
 
 			if (browserName.equals("Chrome"))
 			{
+				// File file = new File("driversMac/chromedriver");
+				// System.setProperty( "webdriver.chrome.driver",
+				// file.getAbsolutePath());
+				//
+				// DesiredCapabilities capabilities =
+				// DesiredCapabilities.chrome();
+				// capabilities.setCapability( "chrome.switches",
+				// Arrays.asList("--start-maximized"));
+				// ChromeOptions options = new ChromeOptions();
+				// options.addArguments("test-type");
+				// capabilities.setCapability(ChromeOptions.CAPABILITY,
+				// options);
+				// driver = new ChromeDriver(capabilities);
+
+				/************
+				 * Grid setup
+				 */
+
 				File file = new File("driversMac/chromedriver");
 				System.setProperty(	"webdriver.chrome.driver",
 									file.getAbsolutePath());
 
-				DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-				capabilities.setCapability(	"chrome.switches",
-											Arrays.asList("--start-maximized"));
-				ChromeOptions options = new ChromeOptions();
-				options.addArguments("test-type");
-				capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-				driver = new ChromeDriver(capabilities);
+				threadDriver = new ThreadLocal<RemoteWebDriver>();
 
-				// maximizing
-				// javascriptMax.executeScript("window.open('','mactestwindow',"
-				// +
-				// "'width=window.screen.availWidth,height=window.screen.availHeight,top=0,left=0')");
-				// driver.close();
-				// driver.switchTo().window("mactestwindow");
+				DesiredCapabilities dc = DesiredCapabilities.chrome();
+				// ChromeOptions options = new ChromeOptions();
+				// options.addArguments("test-type");
+				// dc.setCapability(ChromeOptions.CAPABILITY, options);
+				// dc.setPlatform(Platform.WINDOWS);
+				// dc.setBrowserName("chrome");
+
+				dc.setBrowserName(DesiredCapabilities.chrome().getBrowserName());
+				dc.setPlatform(DesiredCapabilities.chrome().getPlatform());
+				dc.setVersion(DesiredCapabilities.chrome().getVersion());
+				try
+				{
+					threadDriver.set(new RemoteWebDriver(
+															new URL(
+																	"http://192.168.7.200:4444/wd/hub"),
+															dc));
+				}
+				catch (MalformedURLException e)
+				{
+					e.printStackTrace();
+				}
+
+				driver = threadDriver.get();
+				/*****
+				 * Setup done
+				 */
 
 			}
 			else
@@ -264,6 +295,7 @@ public class runTests
 				threadDriver = new ThreadLocal<RemoteWebDriver>();
 
 				DesiredCapabilities dc = DesiredCapabilities.safari();
+
 				// ChromeOptions options = new ChromeOptions();
 				// options.addArguments("test-type");
 				// dc.setCapability(ChromeOptions.CAPABILITY, options);
