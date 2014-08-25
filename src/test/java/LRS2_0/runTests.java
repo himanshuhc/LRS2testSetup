@@ -296,6 +296,8 @@ public class runTests
 
 				DesiredCapabilities dc = DesiredCapabilities.safari();
 
+				System.setProperty("webdriver.safari.noinstall", "true");
+
 				// ChromeOptions options = new ChromeOptions();
 				// options.addArguments("test-type");
 				// dc.setCapability(ChromeOptions.CAPABILITY, options);
