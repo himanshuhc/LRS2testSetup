@@ -133,7 +133,7 @@ public class runTests
 				{
 					threadDriver.set(new RemoteWebDriver(
 															new URL(
-																	"http://127.0.0.1:4444/wd/hub"),
+																	"http://192.168.7.200:4444/wd/hub"),
 															dc));
 				}
 				catch (MalformedURLException e)
@@ -229,7 +229,8 @@ public class runTests
 				 * Grid setup
 				 */
 
-				File file = new File("driversMac/chromedriver");
+				// File file = new File("driversMac/chromedriver");
+				File file = new File("/Users/chromedriver");
 				System.setProperty(	"webdriver.chrome.driver",
 									file.getAbsolutePath());
 
