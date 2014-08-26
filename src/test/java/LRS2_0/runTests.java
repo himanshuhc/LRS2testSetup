@@ -242,20 +242,20 @@ public class runTests
 				threadDriver = new ThreadLocal<RemoteWebDriver>();
 
 				DesiredCapabilities dc = DesiredCapabilities.chrome();
-				// ChromeOptions options = new ChromeOptions();
-				// options.addArguments("test-type");
-				// dc.setCapability(ChromeOptions.CAPABILITY, options);
+				ChromeOptions options = new ChromeOptions();
+				options.addArguments("test-type");
+				dc.setCapability(ChromeOptions.CAPABILITY, options);
 				// dc.setPlatform(Platform.WINDOWS);
 				// dc.setBrowserName("chrome");
 
-				dc.setBrowserName(DesiredCapabilities.chrome().getBrowserName());
-				dc.setPlatform(DesiredCapabilities.chrome().getPlatform());
-				dc.setVersion(DesiredCapabilities.chrome().getVersion());
+				// dc.setBrowserName(DesiredCapabilities.chrome().getBrowserName());
+				// dc.setPlatform(DesiredCapabilities.chrome().getPlatform());
+				// dc.setVersion(DesiredCapabilities.chrome().getVersion());
 				try
 				{
 					threadDriver.set(new RemoteWebDriver(
 															new URL(
-																	"http://192.168.7.200:4444/wd/hub"),
+																	"http://192.168.7.200:4449/wd/hub"),
 															dc));
 				}
 				catch (MalformedURLException e)
@@ -302,7 +302,7 @@ public class runTests
 
 				DesiredCapabilities dc = DesiredCapabilities.safari();
 
-				System.setProperty("webdriver.safari.noinstall", "true");
+				// System.setProperty("webdriver.safari.noinstall", "true");
 
 				// ChromeOptions options = new ChromeOptions();
 				// options.addArguments("test-type");
@@ -317,7 +317,7 @@ public class runTests
 				{
 					threadDriver.set(new RemoteWebDriver(
 															new URL(
-																	"http://192.168.7.200:4444/wd/hub"),
+																	"http://192.168.7.200:4449/wd/hub"),
 															dc));
 				}
 				catch (MalformedURLException e)
