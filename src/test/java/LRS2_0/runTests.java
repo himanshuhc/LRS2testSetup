@@ -76,7 +76,7 @@ public class runTests
 				{
 					threadDriver.set(new RemoteWebDriver(
 															new URL(
-																	"http://192.168.7.200:4444/wd/hub"),
+																	"http://192.168.7.200:4449/wd/hub"),
 															dc));
 				}
 				catch (MalformedURLException e)
@@ -122,11 +122,12 @@ public class runTests
 
 				DesiredCapabilities dc = DesiredCapabilities.chrome();
 				ChromeOptions options = new ChromeOptions();
-				// options.addArguments("test-type");
+				options.addArguments("test-type");
+				dc.setCapability(ChromeOptions.CAPABILITY, options);
 				// dc.set("browSerName", "PhantomJS");
 				// dc.setCapability("browserName", "PhantomJS");
-				dc.setBrowserName("PhantomJS");
-				dc.setCapability("driverName", "ghostdriver");
+				// dc.setBrowserName("PhantomJS");
+				// dc.setCapability("driverName", "ghostdriver");
 
 				// dc.setPlatform(Platform.WINDOWS);
 				// dc.setBrowserName("chrome");
@@ -138,7 +139,7 @@ public class runTests
 				{
 					threadDriver.set(new RemoteWebDriver(
 															new URL(
-																	"http://192.168.7.200:4445/wd/hub"),
+																	"http://192.168.7.200:4449/wd/hub"),
 															dc));
 				}
 				catch (MalformedURLException e)
@@ -188,7 +189,7 @@ public class runTests
 				{
 					threadDriver.set(new RemoteWebDriver(
 															new URL(
-																	"http://192.168.7.200:4444/wd/hub"),
+																	"http://192.168.7.200:4449/wd/hub"),
 															dc));
 				}
 				catch (MalformedURLException e)
