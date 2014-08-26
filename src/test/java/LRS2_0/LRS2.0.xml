@@ -6,8 +6,8 @@
           <class name="LRS2_0.runTests">
               <methods>
 				   <include name="WEB_1259"/>
-                   <!--<include name="WEB_1026__WEB_1038__WEB_1807"/>         
-                   <include name="WEB_1257__WEB_1276"/>
+                   <include name="WEB_1026__WEB_1038__WEB_1807"/>         
+                   <!--<include name="WEB_1257__WEB_1276"/>
                    <include name="WEB_1259"/>
                    <include name="WEB_1260__WEB_1267"/> 
                    <include name="WEB_1262"/>
